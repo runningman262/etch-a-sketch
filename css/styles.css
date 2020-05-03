@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/***************************************
+** Main styles
+*/
+
+* {
+    background-color: rgb(56, 46, 46);
+}
+
+/***************************************
+** grid styles
+*/
+
+.grid-container {
+    width: 705px;
+    margin: 30px;
+}
+
+.grid-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.grid-square {
+    width: 6.25%;
+    padding-top: 6.25%;
+    position: relative;
+    float: left;
+    text-align: center;
+    border: 1px solid rgb(223, 222, 222);
+    margin: -1px 0 0 -1px;
+    background-color: #fff;
+}
+
+/********************************************
+** Button
+*/
+
+.reset {
+    margin: 30px;
+    width: 705px;
+}
+
+.reset-button {
+    font-size: 1.2em;
+    background-color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reset-button:hover {
+    background-color: rgba(6, 180, 43, 0.7);
+    color: #fff;
+}
